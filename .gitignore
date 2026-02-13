@@ -1,0 +1,12 @@
+# Derleme dosyaları
+*.out
+*.o
+*.a
+
+# Vim geçici dosyaları
+*.swp
+*.swo
+*~
+
+# Sistem dosyaları
+.DS_Store
