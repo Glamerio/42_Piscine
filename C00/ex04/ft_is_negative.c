@@ -1,0 +1,30 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: glamerio <glamerio@student.42istanbul.com  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/02/13 22:45:19 by glamerio          #+#    #+#             */
+/*   Updated: 2026/02/13 22:55:43 by glamerio         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <unistd.h>
+
+void	ft_is_negative(int n)
+{
+		char negative;
+		char positive;
+
+		negative = 'N';
+		positive = 'P';
+		if (n < 0)
+		{
+			write(1, &negative, 1);
+		} 
+		else 
+		{
+			write(1, &positive, 1);
+		}
+}
