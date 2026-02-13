@@ -6,7 +6,7 @@
 /*   By: glamerio <glamerio@student.42istanbul.com  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 22:36:11 by glamerio          #+#    #+#             */
-/*   Updated: 2026/02/13 22:44:22 by glamerio         ###   ########.fr       */
+/*   Updated: 2026/02/14 00:03:27 by glamerio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	ft_print_numbers(void)
 {
-		char	nb;
+	char	nb;
 
-		nb = '0';
-		while (nb <= '9')
-		{
-				write(1, &nb, 1);
-				nb++;
-		}
+	nb = '0';
+	while (nb <= '9')
+	{
+		write(1, &nb, 1);
+		nb++;
+	}
 }
