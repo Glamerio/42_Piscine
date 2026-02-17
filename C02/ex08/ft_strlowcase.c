@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strupcase.c                                     :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: glamerio <glamerio@student.42istanbul.com  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/17 16:32:17 by glamerio          #+#    #+#             */
-/*   Updated: 2026/02/17 16:41:20 by glamerio         ###   ########.fr       */
+/*   Created: 2026/02/17 16:38:10 by glamerio          #+#    #+#             */
+/*   Updated: 2026/02/17 16:39:57 by glamerio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strupcase(char *str)
+char	*ft_strlowcase(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
+		if (str[i] >= 'A' && str[i] <= 'Z')
 		{
-			str[i] -= 32;
+			str[i] += 32;
 		}
 		i++;
 	}
